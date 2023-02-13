@@ -7,9 +7,8 @@ Write a query to list the candidates who possess all of the required skills for 
 
 Assumption: There are no duplicates in the candidates table.
 
-'''
-candidates
-''' Table:
+
+```candidates``` Table:
 | Column Name | Type |
 | ----------- | ----------- |
 | candidate_id | integer |
@@ -28,23 +27,23 @@ ORDER BY candidate_id;
 # 2 Facebook SQL Interview Question
 Assume you are given the tables below about Facebook pages and page likes. Write a query to return the page IDs of all the Facebook pages that don't have any likes. The output should be in ascending order.
 
-''' pages ''' Table:
+``` pages ``` Table:
 | Column Name | Type |
 | ----------- | ----------- |
 | page_id | integer |
 | page_name | varchar |
 
-'''page_likes''' Table:
+```page_likes``` Table:
 | Column Name	| Type |
 | user_id	| integer |
 | page_id	| integer |
 | liked_date | datetime |
 
-'''sql
+```sql
 SELECT pg.page_id 
 FROM pages pg LEFT JOIN page_likes pgl
 ON pg.page_id = pgl.page_id
 WHERE pgl.page_id is NULL ;
-'''
+```
 
 
