@@ -7,22 +7,7 @@ Write a query to list the candidates who possess all of the required skills for 
 
 Assumption: There are no duplicates in the candidates table.
 
-candidates Table:
-<table>
-<tr>Column Name	Type</tr?
-candidate_id	integer
-skill	varchar
-candidates Example Input:
-candidate_id	skill
-123	Python
-123	Tableau
-123	PostgreSQL
-234	R
-234	PowerBI
-234	SQL Server
-345	Python
-345	Tableau
-Example Output:
-candidate_id
-123
-</table>
+| Syntax | Description |
+| ----------- | ----------- |
+| Header | Title |
+| Paragraph | Text |
