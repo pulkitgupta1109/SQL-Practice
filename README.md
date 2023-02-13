@@ -35,6 +35,7 @@ Assume you are given the tables below about Facebook pages and page likes. Write
 
 ```page_likes``` Table:
 | Column Name	| Type |
+| ----------- | ----------- |
 | user_id	| integer |
 | page_id	| integer |
 | liked_date | datetime |
