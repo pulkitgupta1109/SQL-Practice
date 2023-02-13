@@ -7,7 +7,15 @@ Write a query to list the candidates who possess all of the required skills for 
 
 Assumption: There are no duplicates in the candidates table.
 
-| Syntax | Description |
+| Column Name | Type |
 | ----------- | ----------- |
-| Header | Title |
-| Paragraph | Text |
+| candidate_id | integer |
+| skill | varchar |
+
+```
+{
+  "firstName": "John",
+  "lastName": "Smith",
+  "age": 25
+}
+```
