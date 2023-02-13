@@ -48,18 +48,21 @@ WHERE pgl.page_id is NULL ;
 ```
 
 Solution #2: Using NOT EXISTS
+```sql
 SELECT page_id
 FROM pages
 WHERE NOT EXISTS (
   SELECT 1
   FROM page_likes AS likes
   WHERE likes.page_id = pages.page_id);
+```
   
 Solution #3: Using EXCEPT
+```sql
 SELECT page_id
 FROM pages
 EXCEPT
 SELECT page_id
 FROM page_likes
 ORDER BY page_id;
-
+```
