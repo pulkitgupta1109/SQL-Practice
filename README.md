@@ -12,7 +12,7 @@ Assumption: There are no duplicates in the candidates table.
 | candidate_id | integer |
 | skill | varchar |
 
-```
+```sql
 SELECT candidate_id 
 FROM candidates 
 WHERE skill IN ('Python', 'Tableau', 'PostgreSQL')
