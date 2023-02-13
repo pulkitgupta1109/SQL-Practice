@@ -13,9 +13,11 @@ Assumption: There are no duplicates in the candidates table.
 | skill | varchar |
 
 ```
-{
-  "firstName": "John",
-  "lastName": "Smith",
-  "age": 25
-}
+SELECT candidate_id 
+FROM candidates 
+WHERE skill IN ('Python', 'Tableau', 'PostgreSQL')
+GROUP BY candidate_id 
+HAVING count(skill)=3
+ORDER BY candidate_id;
+
 ```
