@@ -1,6 +1,6 @@
 # SQL-Practice (Data Lemur)
 
-# 1 Data Science Skills (LinkedIn SQL Interview Question)
+# 1. Data Science Skills (LinkedIn SQL Interview Question)
 Given a table of candidates and their skills, you're tasked with finding the candidates best suited for an open Data Science job. You want to find candidates who are proficient in Python, Tableau, and PostgreSQL.
 
 Write a query to list the candidates who possess all of the required skills for the job. Sort the output by candidate ID in ascending order.
@@ -25,7 +25,7 @@ ORDER BY candidate_id;
 
 ```
 
-# 2 Page With No Likes (Facebook SQL Interview Question)
+# 2. Page With No Likes (Facebook SQL Interview Question)
 Assume you are given the tables below about Facebook pages and page likes. Write a query to return the page IDs of all the Facebook pages that don't have any likes. The output should be in ascending order.
 
 ``` pages ``` Table:
@@ -90,6 +90,7 @@ FROM parts_assembly
 WHERE finish_date is NULL;
 ```
 
+Solution #2
 ```sql
 SELECT part
 FROM parts_assembly
