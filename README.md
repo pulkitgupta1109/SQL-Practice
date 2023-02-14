@@ -68,7 +68,7 @@ FROM page_likes
 ORDER BY page_id;
 ```
 
-# 3 Unfinished Parts [Tesla SQL Interview Question]
+# 3. Unfinished Parts [Tesla SQL Interview Question]
 
 Tesla is investigating bottlenecks in their production, and they need your help to extract the relevant data. Write a query that determines which parts have begun the assembly process but are not yet finished.
 
@@ -88,4 +88,11 @@ Assumptions
 SELECT DISTINCT part 
 FROM parts_assembly
 WHERE finish_date is NULL;
+```
+
+```sql
+SELECT part
+FROM parts_assembly
+WHERE finish_date IS NULL
+GROUP BY part;
 ```
